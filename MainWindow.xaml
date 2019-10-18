@@ -1,0 +1,19 @@
+﻿<Window x:Class="GoblinProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GoblinProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="700">
+    <Grid>
+        <Label Content="Введите имя гоблина:" HorizontalAlignment="Left" Margin="70,59,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="248,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Введите приоритет, 0 или 1:" HorizontalAlignment="Left" Margin="70,111,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="248,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="enqueueButton" Content="Добавить" HorizontalAlignment="Left" Margin="70,174,0,0" VerticalAlignment="Top" Width="75" Click="EnqueueButton_Click"/>
+        <Button x:Name="showButton" Content="Посмотреть" HorizontalAlignment="Left" Margin="70,258,0,0" VerticalAlignment="Top" Width="75" Click="ShowButton_Click"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="291" Margin="391,59,0,0" VerticalAlignment="Top" Width="193"/>
+        <Button x:Name="goButton" Content="Передвинуть очередь" HorizontalAlignment="Left" Margin="70,331,0,0" VerticalAlignment="Top" Width="130" Click="GoButton_Click"/>
+    </Grid>
+</Window>
